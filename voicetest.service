@@ -1,0 +1,13 @@
+[Unit]
+Description = voicedetection
+After = network.target
+
+[Service]
+ExecStart = /home/pi/Desktop/VoiceDetector/main
+WorkingDirectory = /home/pi/Desktop/VoiceDetector
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
