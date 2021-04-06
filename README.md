@@ -3,12 +3,14 @@ create a new service to enable auto start of the program
 
 ## step 1
 create a `xx.service` file. The codes are as follows:
-`[Unit]
+```
+[Unit]
 Description=<Your description>
 [Service]
 ExecStart=<The absolute address of the executable file>
 [Install]
-WantedBy=multi-user.target`
+WantedBy=multi-user.target
+```
 
 ## step 2
 copy it to `/etc/systemd/system`
